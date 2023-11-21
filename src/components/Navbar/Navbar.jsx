@@ -1,7 +1,7 @@
 // import logo from "../assets/logoAND.jpg";
 import { Link } from "react-router-dom";
 
-import { GiHamburgerMenu } from "react-icons/Gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
 import styles from "./navbar.module.css";
