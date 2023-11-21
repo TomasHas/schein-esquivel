@@ -11,11 +11,12 @@ const Navbar = () => {
 
   const handleBurgerClick = (e) => {
     e.preventDefault();
-    setIsMenuOpen(!isMenuOpen);
+    // setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(() => !isMenuOpen);
   };
 
   return (
-    <nav className={styles.container}>
+    <nav>
       <Link to={"/"}>
         <p className={styles.logo}>SCHEIN | ESQUIVEL</p>
       </Link>

@@ -1,5 +1,6 @@
-.container {
-  background-color: yellow;
-  height: 100vh;
+.app {
+  background-color: rgb(95, 95, 95);
+  height: 100%;
   width: 100%;
+  /* overflow: hidden; */
 }
