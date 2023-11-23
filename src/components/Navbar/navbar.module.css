@@ -1,8 +1,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: gray;
-  background: linear-gradient(to bottom, black, transparent);
+  /* background-color: gray; */
+  background: linear-gradient(to bottom, rgb(240, 217, 16), transparent);
   align-items: center;
   width: 100%;
   color: white;
