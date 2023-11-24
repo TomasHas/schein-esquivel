@@ -2,6 +2,8 @@
 import React from "react";
 import styles from "./home.module.css";
 import frente from "./../assets/fotos solas y capturas/FRENTE 90G-ScheinEsquivel-AndonFRENTE aegui-EXT-CAM08-F.jpg";
+import Edificio from "../components/Edificio";
+import Mapa from "../components/Mapa";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -19,14 +21,23 @@ const Home = () => {
         </article>
       </section>
       <section>
-        <h1 className="title">Intro</h1>
+        <Mapa />
+      </section>{" "}
+      <section>
+        <h1 className="title">Barrio</h1>
+      </section>{" "}
+      <section>
+        <Edificio />
+      </section>{" "}
+      <section>
+        <h1 className="title">Unidades</h1>
+      </section>{" "}
+      <section>
+        <h1 className="title">Avances de Obra</h1>
       </section>{" "}
       <section>
         {" "}
-        <section>
-          <h1>Proyectos</h1>
-        </section>{" "}
-        <h1>Mapa</h1>
+        <h1>Contacto</h1>
       </section>
     </div>
   );

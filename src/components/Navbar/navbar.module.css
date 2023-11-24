@@ -9,6 +9,7 @@ nav {
   min-height: 60px;
   position: sticky;
   top: 0;
+  z-index: 1001;
 }
 
 .logo {

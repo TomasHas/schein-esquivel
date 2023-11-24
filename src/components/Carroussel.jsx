@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-
+import styles from "./carroussel.module.css";
 function Carroussel({ data }) {
   const dataMap = data.map((p) => {
     return p.url;
@@ -21,33 +21,34 @@ function Carroussel({ data }) {
   };
   console.log("currentIndex", currentIndex);
   return (
-    <div className="  bg-slate-400   ">
-      <div className=" absolute top-20 left-0  bg-yellow-400  ">
-        <div className=" carousel  ">
-          <div className="absolute top-1/3 flex flex-row justify-between w-full p-2 ">
+    // <div className="  bg-slate-400   ">
+    <div className={styles.container}>
+      {/* <div className=" absolute top-20 left-0  bg-yellow-400  "> */}
+      <div className={styles.inner}>
+        <div className={styles.carroussel}>
+          <div className={styles.buttonContainer}>
             <button
-              className="rounded-full"
+              className={styles.buttonLeft}
               name="left"
               onClick={handleClickLeft}
             >
               {"<"}
             </button>
             <button
-              className="  rounded-full"
+              className={styles.buttonRight}
               name="right"
               onClick={handleClickRight}
             >
               {">"}
             </button>
           </div>
-          <div className=" flex flex-row justify-center">
-            <img
-              // key={i}
-              className=" box-border "
-              src={currentPic}
-              alt="Not Found"
-            />
-          </div>
+
+          <img
+            // key={i}
+            className={styles.image}
+            src={currentPic}
+            alt="Not Found"
+          />
         </div>
       </div>
     </div>

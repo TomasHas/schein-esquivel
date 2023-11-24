@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+}
+.inner {
+  width: 100%;
+}
+.carroussel {
+  width: 100%;
+  position: relative;
+}
+.buttonContainer {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: yellow; */
+  padding: 0 20px 0 20px;
+}
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.image {
+  width: 100%;
+}
