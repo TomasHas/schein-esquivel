@@ -1,11 +1,11 @@
 section {
-  height: 100vh;
-  background-color: gray;
+  /* height: 100vh;
+  background-color: gray; */
   /* overflow: hidden; */
 }
 
 .main_image_container {
-  height: 500px; /* Set the desired height */
+  height: 100vh; /* Set the desired height */
   overflow: hidden;
   position: relative;
   z-index: 1000;

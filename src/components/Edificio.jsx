@@ -15,8 +15,7 @@ const slides = [
 
 const Edificio = () => {
   return (
-    <div>
-      Edificio
+    <div id="edificio">
       <Carroussel data={slides} />
     </div>
   );

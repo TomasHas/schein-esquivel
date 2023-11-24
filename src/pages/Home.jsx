@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import frente from "./../assets/fotos solas y capturas/FRENTE 90G-ScheinEsquivel-AndonFRENTE aegui-EXT-CAM08-F.jpg";
 import Edificio from "../components/Edificio";
 import Mapa from "../components/Mapa";
+import Barrio from "../components/Barrio";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -14,9 +15,7 @@ const Home = () => {
             <div className={styles.main_image_container}>
               {" "}
               <img src={frente} alt="frente" className={styles.main_image} />
-              <h1 className="title">Home</h1>
             </div>{" "}
-            <p></p>
           </div>
         </article>
       </section>
@@ -24,7 +23,7 @@ const Home = () => {
         <Mapa />
       </section>{" "}
       <section>
-        <h1 className="title">Barrio</h1>
+        <Barrio />
       </section>{" "}
       <section>
         <Edificio />

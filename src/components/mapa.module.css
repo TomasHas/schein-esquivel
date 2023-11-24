@@ -1,4 +1,20 @@
-.mapa {
+.container {
   height: auto;
   width: 100%;
+}
+
+.mapa_img_container {
+  height: 100vh; /* Set the desired height */
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+}
+
+.mapa_img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block;
+  position: absolute;
+  bottom: 0; /* Align the bottom of the image with the bottom of the container */
+  transform: translateY(0%);
 }

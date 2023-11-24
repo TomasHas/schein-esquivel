@@ -16,7 +16,6 @@ const slides = [
 function Unidades() {
   return (
     <div>
-      <h1>Unidades</h1>
       <Carroussel data={slides} />
     </div>
   );

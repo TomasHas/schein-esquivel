@@ -20,23 +20,26 @@ const Navbar = () => {
       <Link to={"/"}>
         <img src={logo} alt="logo" height="90" />
       </Link>
-      <section className={styles.burger} onClick={handleBurgerClick}>
+      <div className={styles.burger} onClick={handleBurgerClick}>
         {!isMenuOpen ? (
           <GiHamburgerMenu size={40} />
         ) : (
           <h1 className={styles.x}>x</h1>
         )}
-      </section>
+      </div>
 
       <ul className={isMenuOpen ? styles.open : ""}>
         <li>
-          <Link to="/nosotros">Unidades</Link>{" "}
+          <a href="#barrio">Barrio</a>{" "}
         </li>
         <li>
-          <Link to="/proyectos">Proyectos</Link>
+          <a href="#edificio">Edificio</a>
         </li>
         <li>
-          <Link to="/contacto">Contacto</Link>
+          <a href="#contacto">Contacto</a>
+        </li>
+        <li>
+          <a href="#mapa">mapa</a>
         </li>
       </ul>
     </nav>
